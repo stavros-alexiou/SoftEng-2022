@@ -4,7 +4,7 @@ mydb = mysql.connector.connect(
 	host = 'localhost',
 	user = 'root',
 	password ='',
-	database = 'bookall',
+	database = 'e-ViVa',
 )
 
 if mydb.is_connected():
