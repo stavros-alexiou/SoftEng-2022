@@ -19,28 +19,30 @@
   <widget class="QLabel" name="e-ViVa_2">
    <property name="geometry">
     <rect>
-     <x>150</x>
-     <y>40</y>
-     <width>121</width>
-     <height>51</height>
+     <x>0</x>
+     <y>0</y>
+     <width>421</width>
+     <height>121</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <family>Forte</family>
-     <pointsize>20</pointsize>
+     <family>MS Shell Dlg 2</family>
+     <pointsize>12</pointsize>
      <weight>50</weight>
+     <italic>false</italic>
      <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(162, 202, 255);
+    <string notr="true">background-color: rgb(4, 206, 176);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(27, 36, 156);
 
 </string>
    </property>
    <property name="text">
-    <string>e-ViVa</string>
+    <string>                                    e-ViVa</string>
    </property>
   </widget>
   <widget class="QScrollArea" name="scrollArea">
@@ -49,8 +51,11 @@ color: rgb(27, 36, 156);
      <x>10</x>
      <y>170</y>
      <width>401</width>
-     <height>491</height>
+     <height>501</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(62, 62, 62);</string>
    </property>
    <property name="widgetResizable">
     <bool>true</bool>
@@ -59,7 +64,7 @@ color: rgb(27, 36, 156);
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>-665</y>
+      <y>0</y>
       <width>382</width>
       <height>1218</height>
      </rect>
@@ -647,23 +652,23 @@ font: 12pt &quot;MS Shell Dlg 2&quot;;</string>
      <x>0</x>
      <y>120</y>
      <width>421</width>
-     <height>41</height>
+     <height>51</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <pointsize>12</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
+     <weight>50</weight>
+     <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(0, 170, 255);
 background-color: rgb(48, 76, 118);
-color: rgb(255, 255, 255);</string>
+color: rgb(255, 10, 10);</string>
    </property>
    <property name="text">
-    <string>Enter Business Details:</string>
+    <string>Business Details Form</string>
    </property>
   </widget>
   <widget class="QPushButton" name="BackButton">
@@ -683,7 +688,8 @@ color: rgb(255, 255, 255);</string>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(150, 48, 48);</string>
+    <string notr="true">background-color: rgb();
+color: rgb(150, 48, 48);</string>
    </property>
    <property name="text">
     <string>&lt;-- Back </string>

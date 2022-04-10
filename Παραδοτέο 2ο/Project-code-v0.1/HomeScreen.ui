@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>421</width>
+    <width>423</width>
     <height>721</height>
    </rect>
   </property>
@@ -18,7 +18,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>421</width>
+     <width>431</width>
      <height>731</height>
     </rect>
    </property>
@@ -45,7 +45,7 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>419</width>
+      <width>429</width>
       <height>729</height>
      </rect>
     </property>
@@ -61,8 +61,8 @@
      <property name="font">
       <font>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
@@ -79,15 +79,15 @@ color: rgb(255, 255, 255);</string>
       <rect>
        <x>290</x>
        <y>120</y>
-       <width>131</width>
+       <width>141</width>
        <height>41</height>
       </rect>
      </property>
      <property name="font">
       <font>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
@@ -96,7 +96,7 @@ background-color: rgb(48, 76, 118);
 color: rgb(255, 255, 255);</string>
      </property>
      <property name="text">
-      <string>Restaurants</string>
+      <string>Food Cafe</string>
      </property>
     </widget>
     <widget class="QPushButton" name="TransportButton">
@@ -111,8 +111,8 @@ color: rgb(255, 255, 255);</string>
      <property name="font">
       <font>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
@@ -136,17 +136,17 @@ color: rgb(255, 255, 255);</string>
      <property name="font">
       <font>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(0, 170, 255);
+      <string notr="true">
 background-color: rgb(48, 76, 118);
 color: rgb(255, 255, 255);</string>
      </property>
      <property name="text">
-      <string>Attractions</string>
+      <string>Activities</string>
      </property>
     </widget>
     <widget class="QPushButton" name="ForumsButton">
@@ -154,15 +154,15 @@ color: rgb(255, 255, 255);</string>
       <rect>
        <x>290</x>
        <y>180</y>
-       <width>131</width>
+       <width>141</width>
        <height>41</height>
       </rect>
      </property>
      <property name="font">
       <font>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
@@ -243,7 +243,7 @@ color: rgb(255, 255, 255);</string>
       <rect>
        <x>310</x>
        <y>670</y>
-       <width>111</width>
+       <width>121</width>
        <height>51</height>
       </rect>
      </property>
@@ -305,28 +305,30 @@ color: rgb(255, 255, 255);</string>
     <widget class="QLabel" name="e-ViVa">
      <property name="geometry">
       <rect>
-       <x>140</x>
-       <y>50</y>
-       <width>171</width>
-       <height>51</height>
+       <x>0</x>
+       <y>0</y>
+       <width>481</width>
+       <height>121</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <family>Forte</family>
-       <pointsize>20</pointsize>
+       <family>MS Shell Dlg 2</family>
+       <pointsize>12</pointsize>
        <weight>50</weight>
+       <italic>false</italic>
        <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(162, 202, 255);
+      <string notr="true">background-color: rgb(4, 206, 176);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(27, 36, 156);
 
 </string>
      </property>
      <property name="text">
-      <string>e-ViVa</string>
+      <string>                                     e-ViVa</string>
      </property>
     </widget>
     <widget class="QListWidget" name="listWidget">
@@ -373,8 +375,8 @@ color: rgb(41, 75, 117);
      <property name="font">
       <font>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
@@ -620,6 +622,34 @@ color: rgb(255, 255, 255);</string>
       </property>
      </item>
     </widget>
+    <widget class="QGraphicsView" name="graphicsView">
+     <property name="geometry">
+      <rect>
+       <x>-5</x>
+       <y>220</y>
+       <width>441</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(48, 76, 118);</string>
+     </property>
+    </widget>
+    <widget class="QGraphicsView" name="graphicsView_2">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>231</y>
+       <width>411</width>
+       <height>451</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(62, 62, 62);</string>
+     </property>
+    </widget>
+    <zorder>graphicsView_2</zorder>
+    <zorder>graphicsView</zorder>
     <zorder>ProfileButton</zorder>
     <zorder>ForumsButton</zorder>
     <zorder>FavoritesButton</zorder>

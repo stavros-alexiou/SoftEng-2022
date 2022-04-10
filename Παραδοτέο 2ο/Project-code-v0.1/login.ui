@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>408</width>
+    <width>417</width>
     <height>719</height>
    </rect>
   </property>
@@ -50,7 +50,8 @@
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">color: rgb(86, 98, 122);</string>
+          <string notr="true">color: rgb(86, 98, 122);
+background-color: rgb(205, 255, 228);</string>
          </property>
          <property name="text">
           <string>Username</string>
@@ -76,7 +77,8 @@
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: rgb(86, 98, 122);</string>
+        <string notr="true">color: rgb(86, 98, 122);
+background-color: rgb(205, 255, 228);</string>
        </property>
        <property name="text">
         <string>Password</string>
@@ -103,7 +105,7 @@
          </property>
          <property name="styleSheet">
           <string notr="true">color: rgb(86, 98, 122);
-background-color: rgb(227, 180, 180);</string>
+background-color: rgb();</string>
          </property>
          <property name="text">
           <string>Sign In</string>
@@ -117,28 +119,30 @@ background-color: rgb(227, 180, 180);</string>
    <widget class="QLabel" name="e-ViVa_2">
     <property name="geometry">
      <rect>
-      <x>150</x>
-      <y>70</y>
-      <width>171</width>
-      <height>51</height>
+      <x>-10</x>
+      <y>0</y>
+      <width>451</width>
+      <height>121</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <family>Forte</family>
-      <pointsize>20</pointsize>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>12</pointsize>
       <weight>50</weight>
+      <italic>false</italic>
       <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(188, 218, 255);
+     <string notr="true">background-color: rgb(4, 206, 176);
+font: 12pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(27, 36, 156);
 
 </string>
     </property>
     <property name="text">
-     <string>e-ViVa</string>
+     <string>                                       e-ViVa</string>
     </property>
    </widget>
    <widget class="QFrame" name="frame">
@@ -166,7 +170,7 @@ color: rgb(27, 36, 156);
       <x>50</x>
       <y>480</y>
       <width>161</width>
-      <height>31</height>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
@@ -177,7 +181,8 @@ color: rgb(27, 36, 156);
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(45, 64, 88);</string>
+     <string notr="true">color: rgb(255, 10, 10);
+background-color: rgb(62, 62, 62);</string>
     </property>
     <property name="text">
      <string>Don't have an account?</string>
@@ -187,9 +192,9 @@ color: rgb(27, 36, 156);
     <property name="geometry">
      <rect>
       <x>240</x>
-      <y>490</y>
-      <width>121</width>
-      <height>41</height>
+      <y>480</y>
+      <width>131</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="font">
@@ -201,17 +206,93 @@ color: rgb(27, 36, 156);
     </property>
     <property name="styleSheet">
      <string notr="true">color: rgb(136, 0, 0);
-background-color: rgb(227, 180, 180);</string>
+background-color: rgb();</string>
     </property>
     <property name="text">
      <string>Create Account</string>
     </property>
    </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>110</y>
+      <width>441</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);
+background-color: rgb(48, 76, 118);
+color: rgb(255, 10, 10);</string>
+    </property>
+    <property name="text">
+     <string>             The future is in your hand with a click</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>160</y>
+      <width>401</width>
+      <height>571</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(62, 62, 62);</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="HomeButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>670</y>
+      <width>421</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial Rounded MT Bold</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 170, 255);
+background-color: rgb(48, 76, 118);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string> e-Viva©. version 1.01, 04/2022. appstore/e-viva</string>
+    </property>
+    <property name="default">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <zorder>graphicsView</zorder>
    <zorder>frame</zorder>
    <zorder>layoutWidget</zorder>
    <zorder>e-ViVa_2</zorder>
    <zorder>label</zorder>
    <zorder>createaccButton</zorder>
+   <zorder>label_2</zorder>
+   <zorder>HomeButton</zorder>
   </widget>
  </widget>
  <resources/>
