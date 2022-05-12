@@ -1,0 +1,8 @@
+Υποχρεωτικά Παραδοτέου:
+
+1) Sequence Diagrams.
+2) Domain Model.
+
+Προαιρετικά Παραδοτέου:
+
+3) Project code αν χρειαστει κατι περεταιρω, usecases rob αν προκυψουν αλλα απο το seq.
