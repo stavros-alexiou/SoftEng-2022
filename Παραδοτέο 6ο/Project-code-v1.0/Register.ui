@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>403</width>
-    <height>719</height>
+    <height>721</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -26,7 +26,7 @@
     <string notr="true">background-color: rgb(188, 218, 255);</string>
    </property>
    <property name="title">
-    <string>Signup</string>
+    <string/>
    </property>
    <widget class="QLabel" name="e-ViVa_2">
     <property name="geometry">
