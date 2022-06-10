@@ -8,7 +8,7 @@ from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 from PyQt5.uic import loadUi
 
-#SIMPLE USER
+#USER
 class Login(QDialog):
     def __init__(self):
         super(Login, self).__init__()
@@ -146,7 +146,7 @@ class CreateAcc(QDialog):
         widget.setCurrentWidget(login)
 
 
-#SIMPLE USER
+#CUSTOMER
 
 class HomeScreen(QDialog):
     def __init__(self):
@@ -162,8 +162,8 @@ class HomeScreen(QDialog):
 
         # ComboBoxes
         self.comboBoxAccomodation.currentIndexChanged.connect(self.combochanged)
-        self.comboBoxAttractions.currentIndexChanged.connect(self.combochanged)
-        self.comboBoxRestaurants.currentIndexChanged.connect(self.combochanged)
+        self.comboBoxActivities.currentIndexChanged.connect(self.combochanged)
+        self.comboBoxFoodCafeNightlife.currentIndexChanged.connect(self.combochanged)
         self.comboBoxTransport.currentIndexChanged.connect(self.combochanged)
 
     def combochanged(self):
@@ -179,34 +179,34 @@ class HomeScreen(QDialog):
         elif self.comboBoxAccomodation.currentIndex() == 4:
             pass
 
-        if self.comboBoxAttractions.currentIndex() == 1:
+        if self.comboBoxActivities.currentIndex() == 1:
             pass
-            #filter database for Attractions tables
-        elif self.comboBoxAttractions.currentIndex() == 2:
+            #filter database for Activities tables
+        elif self.comboBoxActivities.currentIndex() == 2:
             pass
-        elif self.comboBoxAttractions.currentIndex() == 3:
+        elif self.comboBoxActivities.currentIndex() == 3:
             pass
-        elif self.comboBoxAttractions.currentIndex() == 4:
-            pass
-
-        if self.comboBoxRestaurants.currentIndex() == 1:
-            pass
-            #filter database for Restaurants tables
-        elif self.comboBoxRestaurants.currentIndex() == 2:
-            pass
-        elif self.comboBoxRestaurants.currentIndex() == 3:
-            pass
-        elif self.comboBoxRestaurants.currentIndex() == 4:
+        elif self.comboBoxActivities.currentIndex() == 4:
             pass
 
-        if self.comboBoxTransport.currentIndex() == 1:
+        if self.comboBoxFoodCafeNightlife.currentIndex() == 1:
             pass
-            #filter database for Transport tables
-        elif self.comboBoxTransport.currentIndex() == 2:
+            #filter database for FoodCafeNightlife tables
+        elif self.comboBoxFoodCafeNightlife.currentIndex() == 2:
             pass
-        elif self.comboBoxTransport.currentIndex() == 3:
+        elif self.comboBoxFoodCafeNightlife.currentIndex() == 3:
             pass
-        elif self.comboBoxTransport.currentIndex() == 4:
+        elif self.comboBoxFoodCafeNightlife.currentIndex() == 4:
+            pass
+
+        if self.comboBoxTransportation.currentIndex() == 1:
+            pass
+            #filter database for Transportation tables
+        elif self.comboBoxTransportation.currentIndex() == 2:
+            pass
+        elif self.comboBoxTransportation.currentIndex() == 3:
+            pass
+        elif self.comboBoxTransportation.currentIndex() == 4:
             pass
         print("value Changed")
 
@@ -252,7 +252,7 @@ class Profile(QDialog):
         widget.addWidget(addBusiness)
         widget.setCurrentWidget(addBusiness)
         
-#BUSINESSMAN        
+#SUPERUSER        
 
 class BusinessHome(QDialog):
     def __init__(self):
@@ -284,8 +284,8 @@ class AddBusiness(QDialog):
         self.BackButton.clicked.connect(self.gotoBusinessHome)
         self.AccomodationButton.clicked.connect(self.gotoAccForm)
         self.FlightsButton.clicked.connect(self.gotoFligthsForm)
-        self.RestaurantsButton.clicked.connect(self.gotoRestForm)
-        self.AttractionsButton.clicked.connect(self.gotoAttrForm)
+        self.FoodCafeNightlifeButton.clicked.connect(self.gotoRestForm)
+        self.ActivitiesButton.clicked.connect(self.gotoAttrForm)
         self.TrasportationButton.clicked.connect(self.gotoTransForm)
         self.HomeButton.clicked.connect(self.gotoBusinessHome)
         self.ProfileButton.clicked.connect(self.gotoProfile)
@@ -306,7 +306,7 @@ class AddBusiness(QDialog):
         widget.setCurrentWidget(flightsForm)
 
     def gotoAttrForm(self):
-        attrForm = AttractionsForm()
+        attrForm = ActivitiesForm()
         widget.addWidget(attrForm)
         widget.setCurrentWidget(attrForm)
 
@@ -392,7 +392,7 @@ class AccomodationForm(QDialog):
         widget.addWidget(profile)
         widget.setCurrentWidget(profile)
 
-    def insertAttraction(self):
+    def insertActivity(self):
         name = self.Name.text()
         surname = self.Surname.text()
         businessName = self.BusinessName.text()
@@ -472,14 +472,14 @@ class FlightsForm(QDialog):
         widget.setCurrentWidget(profile)
 
 
-class AttractionsForm(QDialog):
+class ActivitiesForm(QDialog):
     def __init__(self):
-        super(AttractionsForm, self).__init__()
+        super(ActivitiesForm, self).__init__()
         loadUi("BusinessFormAttr.ui", self)
         self.BackButton.clicked.connect(self.gotoAddBusiness)
         self.HomeButton.clicked.connect(self.gotoBusinessHome)
         self.ProfileButton.clicked.connect(self.gotoProfile)
-        self.submitButton.clicked.connect(self.insertAttraction)
+        self.submitButton.clicked.connect(self.insertActivity)
 
     def gotoAddBusiness(self):
         addBusiness = AddBusiness()
@@ -501,7 +501,7 @@ class AttractionsForm(QDialog):
         widget.addWidget(profile)
         widget.setCurrentWidget(profile)
 
-    def insertAttraction(self):
+    def insertActivity(self):
         name = self.Name.text()
         surname = self.Surname.text()
         businessName = self.BusinessName.text()
@@ -556,13 +556,7 @@ class AttractionsForm(QDialog):
             else:
                 QMessageBox.about(self, "Error", "An error occurred.")  
             
-'''na min uparxei idio business name *DONE
-validate email
-contact number 10psifio
-na min uparxoun kena pedia check_Blank
-na allazei to index (na min einai 0)
-radio-button selection
- '''
+
 class RestaurantsForm(QDialog):
     def __init__(self):
         super(RestaurantsForm, self).__init__()
