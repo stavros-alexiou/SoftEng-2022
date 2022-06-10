@@ -383,8 +383,8 @@ CREATE TABLE `roles` (
 --
 
 INSERT INTO `roles` (`role_id`, `role_name`) VALUES
-(0, 'client'),
-(1, 'businessman');
+(0, 'customer'),
+(1, 'superuser');
 
 -- --------------------------------------------------------
 
